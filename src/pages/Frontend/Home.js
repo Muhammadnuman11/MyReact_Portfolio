@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
+// import About from './About'
 
 export default function Home() {
   return (
@@ -52,8 +53,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* About
-      <About /> */}
+      {/* About */}
+      {/* <About /> */}
       
     </Layout>
   )

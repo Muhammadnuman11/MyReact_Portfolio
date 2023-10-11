@@ -1,5 +1,6 @@
 .about {
     padding: 112px 0;
+    background: #fff;
 
     .aboutBox {
         display: flex;
@@ -55,5 +56,14 @@
     .aboutImg {
         text-align: center;
         margin: 36px 0;
+    }
+}
+@media only screen and (max-width:400px) {
+    .aboutImg {
+        height: 400px !important;
+
+        img {
+            width: 340px !important;
+        }
     }
 }
