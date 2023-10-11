@@ -1,0 +1,116 @@
+.home {
+    height: 100vh;
+    position: relative;
+
+    .carousel {
+        height: 100%;
+    }
+
+    .homeContent {
+        background: #fff;
+        z-index: 1;
+        height: 100%;
+        clip-path: polygon(68% 0, 100% 50%, 68% 100%, 0 100%, 0 55%, 0 0);
+        width: 34%;
+        position: absolute;
+
+        .homeArrow {
+            width: 100%;
+            height: 100%;
+            background: #e6e6e6;
+            clip-path: polygon(68% 0, 100% 50%, 68% 100%, 66% 100%, 98% 50%, 66% 0);
+        }
+    }
+
+    .contentCenter {
+        position: absolute;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        z-index: 2;
+        padding-left: 118px;
+
+
+
+        h1 {
+            font-size: 55px;
+            color: #000;
+            font-weight: 900;
+            margin: 20px 0;
+
+            span {
+                color: #b1b493;
+            }
+        }
+
+        .hireMe {
+            background: #b1b493;
+            color: #fff;
+            border: 1px solid #b1b493;
+
+            &:hover {
+                background: none;
+                color: #b1b493;
+            }
+        }
+
+
+        .downloadCV {
+            color: #b1b493;
+            border: 1px solid #b1b493;
+            margin: 0 10px;
+
+            &:hover {
+                background: #b1b493;
+                color: #fff;
+            }
+        }
+
+    }
+
+    .imageCenter {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-end;
+
+        .homeCarousel {
+            width: 78%;
+            height: 100%;
+            background: #000;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+                opacity: 0.4;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:1000px) {
+    .contentCenter {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .contentCenter {
+        width: 100% !important;
+        padding-left: 60px !important;
+    }
+
+    .homeContent {
+        display: none;
+    }
+
+    .homeCarousel {
+        width: 100% !important;
+    }
+}

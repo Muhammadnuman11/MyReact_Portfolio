@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Playfair+Display:wght@700&family=Poppins&family=Roboto+Condensed&display=swap');
+
+/* font-family: 'League Spartan', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+@import '../src/scss/bootstrap';
+@import '../src/scss/navbar';
+@import '../src/scss/footer';
+@import '../src/scss/home';
+@import '../src/scss/about';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+// Common Headings
+
+.topHeading {
+  text-transform: uppercase;
+  color: #b1b493;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.mainHeading{
+  font-size: 34px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.mainPara{
+  font-size: 16px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: #999999;
+  text-align: center;
+}
+
