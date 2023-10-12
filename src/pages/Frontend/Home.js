@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 // import About from './About'
+import CV from '../../assets/files/NomiCV.pdf'
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
                   <h1>Creative <span>UI/UX</span> Web Designer & Developer</h1>
                   <div className="buttons">
                     <button className='btn hireMe'>Hire me</button>
-                    <button className='btn downloadCV'>Download CV</button>
+                    <a href={CV} download="NomiCV" rel="noreferrer" target='_blank'>
+                      <button className='btn downloadCV'>Download CV</button>
+                    </a>
                   </div>
                 </div>
                 <div className="imageCenter">
@@ -39,7 +42,9 @@ export default function Home() {
                   <h1>Hi, I am  <span>Nomi</span> This is my favorite work.</h1>
                   <div className="buttons">
                     <button className='btn hireMe'>Hire me</button>
-                    <button className='btn downloadCV'>Download CV</button>
+                    <a href={CV} download="NomiCV" rel="noreferrer" target='_blank'>
+                      <button className='btn downloadCV'>Download CV</button>
+                    </a>
                   </div>
                 </div>
                 <div className="imageCenter">
@@ -55,7 +60,8 @@ export default function Home() {
 
       {/* About */}
       {/* <About /> */}
-      
+
     </Layout>
   )
 }
+
