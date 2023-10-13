@@ -1,7 +1,10 @@
 import React from 'react'
 import Layout from '../../components/Layout'
-// import About from './About'
+import About from './About'
+import Skills from './Skills'
 import CV from '../../assets/files/NomiCV.pdf'
+import { TypeAnimation } from 'react-type-animation'
+import Services from './Services'
 
 export default function Home() {
   return (
@@ -16,8 +19,21 @@ export default function Home() {
                   <div className='homeArrow'></div>
                 </div>
                 <div className="contentCenter">
-                  <h3 className='topHeading text-start'>Hello! This is Nomi</h3>
-                  <h1>Creative <span>UI/UX</span> Web Designer & Developer</h1>
+                  <h3 className='topHeading text-start'>
+                    Software Engineer | MERN Developer | Website Developer</h3>
+                  <h1>
+                    <TypeAnimation
+                      sequence={[
+                        'Creative UI/UX Web Designer & Developer',
+                        1000,
+                      ]}
+                      wrapper="h1"
+                      speed={50}
+                      style={{ fontColor: '#000', display: 'inline-block' }}
+                      repeat={10}
+                    />
+                    {/* Creative <span>UI/UX</span> Web Designer & Developer */}
+                  </h1>
                   <div className="buttons">
                     <button className='btn hireMe'>Hire me</button>
                     <a href={CV} download="NomiCV" rel="noreferrer" target='_blank'>
@@ -58,8 +74,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* About */}
-      {/* <About /> */}
+      {/* About  */}
+      <About />
+
+      {/* Skills */}
+      <Skills />
+
+      {/* Services */}
+      <Services />
 
     </Layout>
   )

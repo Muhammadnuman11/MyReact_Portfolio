@@ -1,10 +1,10 @@
 import React from 'react'
-import Layout from '../../components/Layout'
+// import Layout from '../../components/Layout'
 
 export default function About() {
 
     return (
-        <Layout>
+        // <Layout>
             <div className="about" id="about">
                 <div className="container">
                     <div className="aboutBox">
@@ -44,6 +44,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </Layout>
+        // </Layout>
     )
 }

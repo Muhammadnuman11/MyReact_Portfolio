@@ -1,0 +1,24 @@
+.services {
+    padding: 112px 0;
+
+    .servicesBox {
+display: flex;
+        .box {
+            width: 360px;
+            height: 250px;
+            margin-top: 45px;
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            // color: #ffffff;
+            padding: 25px;
+
+            .icon-box {
+               
+            }
+
+            .detail-box {
+
+            }
+        }
+    }
+}
