@@ -1,5 +1,7 @@
 import React from 'react'
-import { FaCode } from 'react-icons/fa'
+import { CgWebsite } from 'react-icons/cg'
+import { BsBoxes } from 'react-icons/bs'
+import { HiOutlineShoppingBag } from 'react-icons/hi'
 
 export default function Services() {
   return (
@@ -13,13 +15,39 @@ export default function Services() {
         <div className="servicesBox">
           <div className="box">
             <div className="icon-box">
-              <FaCode />
+              <CgWebsite />
             </div>
             <div className="detail-box">
-              <h4>
+              <h3>
                 Web App Development
-              </h4>
-              <p>
+              </h3>
+              <p className='mainPara text-start'>
+                A web application is an interactive program that runs on a web server and is accessed through a web browser.
+              </p>
+            </div>
+          </div>
+          <div className="box">
+            <div className="icon-box">
+              <BsBoxes />
+            </div>
+            <div className="detail-box">
+              <h3>
+                Responsive Web Application
+              </h3>
+              <p className='mainPara text-start'>
+                A web application is an interactive program that runs on a web server and is accessed through a web browser.
+              </p>
+            </div>
+          </div>
+          <div className="box">
+            <div className="icon-box">
+              <HiOutlineShoppingBag />
+            </div>
+            <div className="detail-box">
+              <h3>
+                Ecommerce Web Application
+              </h3>
+              <p className='mainPara text-start'>
                 A web application is an interactive program that runs on a web server and is accessed through a web browser.
               </p>
             </div>

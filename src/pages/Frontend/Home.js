@@ -19,21 +19,29 @@ export default function Home() {
                   <div className='homeArrow'></div>
                 </div>
                 <div className="contentCenter">
-                  <h3 className='topHeading text-start'>
-                    Software Engineer | MERN Developer | Website Developer</h3>
                   <h1>
+                    <span>Hi, I am</span>
+                    Numan Irshad
+                  </h1>
+                  {/* <h3 className='topHeading text-start'> */}
                     <TypeAnimation
                       sequence={[
-                        'Creative UI/UX Web Designer & Developer',
+                        "I'm a SOfTWARE ENGINEER",
+                        1000,
+                        "I'm a MERN DEVELOPER",
+                        1000,
+                        "I'm a FRONTEND DEVELOPER",
+                        1000,
+                        "I'm a WEBSITE DEVELOPER",
                         1000,
                       ]}
-                      wrapper="h1"
+                      wrapper="p"
                       speed={50}
-                      style={{ fontColor: '#000', display: 'inline-block' }}
-                      repeat={10}
+                      style={{ color: '#B1B493', fontSize: "24px",  marginBottom: '20px', fontWeight: "900", letterSpacing: "2px"}}
+                      repeat={Infinity}
                     />
-                    {/* Creative <span>UI/UX</span> Web Designer & Developer */}
-                  </h1>
+                    {/* Software Engineer | MERN Developer | Website Developer */}
+                  {/* </h3> */}
                   <div className="buttons">
                     <button className='btn hireMe'>Hire me</button>
                     <a href={CV} download="NomiCV" rel="noreferrer" target='_blank'>
@@ -54,8 +62,9 @@ export default function Home() {
                   <div className='homeArrow'></div>
                 </div>
                 <div className="contentCenter">
-                  <h3 className='topHeading text-start'>We design & build brand websites</h3>
-                  <h1>Hi, I am  <span>Nomi</span> This is my favorite work.</h1>
+                  <h3 className='topHeading text-start'>design & build brand websites</h3>
+                  <h1><span>Hi, I am</span> Nomi<span className='d-inline-block fs-1'>.</span></h1>
+                  <h2>This is my favorite work.</h2>
                   <div className="buttons">
                     <button className='btn hireMe'>Hire me</button>
                     <a href={CV} download="NomiCV" rel="noreferrer" target='_blank'>

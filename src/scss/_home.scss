@@ -24,7 +24,7 @@
 
     .contentCenter {
         position: absolute;
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,14 +35,27 @@
 
 
         h1 {
-            font-size: 55px;
-            color: #000;
             font-weight: 900;
             margin: 20px 0;
+            color: #b1b493;
+            font-size: 55px;
+            text-transform: uppercase;
 
             span {
-                color: #b1b493;
+                font-size: 32px;
+                color: #000;
+                display: block;
+                font-weight: 700;
+                text-transform: capitalize;
             }
+        }
+
+        h2 {
+            color: '#b1b493';
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 900;
+            letter-spacing: 2px;
         }
 
         .hireMe {
@@ -96,7 +109,7 @@
 
 @media only screen and (max-width:1000px) {
     .contentCenter {
-        width: 80% !important;
+        width: 100% !important;
     }
 }
 
