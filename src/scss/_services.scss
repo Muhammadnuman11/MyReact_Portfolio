@@ -4,9 +4,11 @@
     .servicesBox {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
 
         .box {
-            width: 360px;
+            width: 340px;
             height: 250px;
             margin: 40px 0;
             background-color: #fff;
@@ -69,5 +71,11 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .servicesBox {
+        justify-content: center !important;
     }
 }

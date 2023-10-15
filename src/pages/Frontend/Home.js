@@ -26,9 +26,9 @@ export default function Home() {
                   {/* <h3 className='topHeading text-start'> */}
                     <TypeAnimation
                       sequence={[
-                        "I'm a SOfTWARE ENGINEER",
+                        "I'm a SOFTWARE ENGINEER",
                         1000,
-                        "I'm a MERN DEVELOPER",
+                        "I'm a MERN STACK DEVELOPER",
                         1000,
                         "I'm a FRONTEND DEVELOPER",
                         1000,
@@ -62,9 +62,9 @@ export default function Home() {
                   <div className='homeArrow'></div>
                 </div>
                 <div className="contentCenter">
-                  <h3 className='topHeading text-start'>design & build brand websites</h3>
+                  <h3 className='topHeading text-start'>I design & build brand websites</h3>
                   <h1><span>Hi, I am</span> Nomi<span className='d-inline-block fs-1'>.</span></h1>
-                  <h2>This is my favorite work.</h2>
+                  <h2>This is my Portfolio.</h2>
                   <div className="buttons">
                     <button className='btn hireMe'>Hire me</button>
                     <a href={CV} download="NomiCV" rel="noreferrer" target='_blank'>

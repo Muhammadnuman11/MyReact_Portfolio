@@ -1,30 +1,19 @@
 import React from 'react'
-// import Layout from '../../components/Layout'
-import skillData from '../../Data/skillData'
-// import HomeComponent from '../../components/HomeComponent';
+import skillData from '../../Data/skillData';
 
 export default function Skills() {
 
-    let skills = skillData;
-
     return (
-        // <Layout>
-        //     <HomeComponent
-        //         topHeading={"Skills"}
-        //         mainHeading={"My Skills"}
-        //         mainPara={"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"}
-
-        //     />
         <div className="skills" id='skills'>
             <div className="container">
                 <div className="skillsBox">
                     <div className="skillsText">
                         <h2 className='topHeading'>Skills</h2>
                         <h1 className='mainHeading'>My Skills</h1>
-                        <p className='mainPara'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <p className='mainPara'>MERN stack development, responsive web design, UI/UX, database design, server setup, React, Node.js, and more...</p>
                     </div>
                     <div className="skillsDetails">
-                        {skills.map((skill, i) => {
+                        {skillData.map((skill, i) => {
                             return <div className="skillsDetailsBoxs" key={i}>
                                 <div className="skillName">
                                     <h1>{skill.skill}</h1>

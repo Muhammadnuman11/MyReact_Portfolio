@@ -35,6 +35,7 @@ const skillArr = [
         skill: "FireBase",
         value: 70,
     },
+
 ]
 
 export default skillArr;
