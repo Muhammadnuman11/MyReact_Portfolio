@@ -5,6 +5,7 @@ import Skills from './Skills'
 import CV from '../../assets/files/NomiCV.pdf'
 import { TypeAnimation } from 'react-type-animation'
 import Services from './Services'
+import Projects from './Projects'
 
 export default function Home() {
   return (
@@ -91,6 +92,9 @@ export default function Home() {
 
       {/* Services */}
       <Services />
+
+      {/* Projects */}
+      <Projects />
 
     </Layout>
   )
