@@ -38,6 +38,7 @@
                     color: 555;
                     font-weight: 600;
                     font-size: 21px;
+                    display: flex;
                 }
 
                 /* Circle */
@@ -54,7 +55,9 @@
                     fill: none;
                     stroke-width: 2.1;
                     stroke-linecap: round;
-                    animation: progress 1s ease-out forwards;
+                }
+                .circleAnimation {
+                    animation: progress 3s ease-out forwards;
                 }
 
                 @keyframes progress {

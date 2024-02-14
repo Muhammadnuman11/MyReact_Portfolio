@@ -1,17 +1,16 @@
 import React from 'react'
-// import Layout from '../../components/Layout'
 
 export default function About() {
 
     return (
         // <Layout>
-            <div className="about" id="about">
+            <div className="about" id="about" data-index='1'>
                 <div className="container">
                     <div className="aboutBox">
-                        <div className="aboutImg">
+                        <div className="aboutImg animate__animated animate__fadeInUp">
                             <img src="/images/about.jpg" alt="" />
                         </div>
-                        <div className="aboutContent">
+                        <div className="aboutContent animate__animated animate__fadeInUp">
                             <h3 className='topHeading aboutText'>MY INTRO</h3>
                             <h1 className="mainHeading aboutText">About Me</h1>
                             <p className="mainPara aboutText">I am an energetic, ambitious person who has developed a mature and responsible approach to any task that I undertake, or situation that I am presented with. I am excellent in working with others to achieve a certain objective on time and with excellence.</p>

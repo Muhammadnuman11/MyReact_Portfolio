@@ -1,22 +1,28 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import { FaHome, FaInfoCircle, FaPhone, FaCode, FaBriefcase, FaTools, FaBook } from 'react-icons/fa';
-
+import { FaHome, FaInfoCircle, FaPhone, FaCode, FaBriefcase, FaTools } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
 
 export default function Header() {
 
   var givenClass = "bg-transperent";
   var colorClass;
   const link = useLocation().hash;
+  console.log(link)
   if (link === "#home") {
+    givenClass = "bgDark"
+    colorClass = "textLight"
+  } else if (link === "") {
     givenClass = "bgDark"
     colorClass = "textLight"
   } else {
     colorClass = "textDark"
     givenClass = "bgLight"
   }
+  console.log(givenClass)
   var homeClass; var aboutClass; var skillClass; var serviceClass;
-  var projectClass; var blogClass; var contactClass;
+  var projectClass; var contactClass;
+  //  var blogClass; 
   if (link === "#home") {
     homeClass = "active"
   } else if (link === "#about") {
@@ -27,9 +33,9 @@ export default function Header() {
     serviceClass = "active"
   } else if (link === "#projects") {
     projectClass = "active"
-  } else if (link === "#blog") {
-    blogClass = "active"
-  } else if(link === "#contact") {
+    // } else if (link === "#blog") {
+    //   blogClass = "active"
+  } else if (link === "#contact") {
     contactClass = "active"
   }
 
@@ -57,12 +63,12 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item my-3">
-                <a href='#skills' className={`nav-link ${colorClass}  ${skillClass}`}>Skills
+                <a href='#skills' className={`nav-link ${colorClass} ${skillClass}`}>Skills
                   <span><FaCode /> </span>
                 </a>
               </li>
               <li className="nav-item my-3">
-                <a href='#services' className={`nav-link ${colorClass}  ${serviceClass}`}>Services
+                <a href='#services' className={`nav-link ${colorClass} ${serviceClass}`}>Services
                   <span><FaTools /> </span>
                 </a>
               </li>
@@ -71,13 +77,13 @@ export default function Header() {
                   <span><FaBriefcase /> </span>
                 </a>
               </li>
+              {/* <li className="nav-item my-3">
+                  <a href='#blog' className={`nav-link ${colorClass} ${blogClass}`}>Blog
+                    <span><FaBook /> </span>
+                  </a>
+                </li> */}
               <li className="nav-item my-3">
-                <a href='#blog' className={`nav-link ${colorClass}  ${blogClass}`}>Blog
-                  <span><FaBook /> </span>
-                </a>
-              </li>
-              <li className="nav-item my-3">
-                <a href='#contact' className={`nav-link ${colorClass}  ${contactClass}`}>Contact
+                <a href='#contact' className={`nav-link ${colorClass} ${contactClass}`}>Contact
                   <span><FaPhone /> </span>
                 </a>
               </li>
@@ -86,5 +92,6 @@ export default function Header() {
         </div>
       </nav >
     </>
+
   )
 }

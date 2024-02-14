@@ -1,0 +1,108 @@
+.contact {
+    padding: 112px 0 0 0;
+
+    .contactBox {
+        display: flex;
+        flex-wrap: wrap;
+
+        .box1 {
+            height: 100%;
+            width: 58%;
+            margin: 40px 0 0 0;
+            background-color: #f8f9fa;
+
+            .input {
+                display: flex;
+
+                input {
+                    border-radius: 0;
+                    border: 2px solid #b1b493;
+                    margin: 15px 0;
+                    padding: 10px 20px;
+                    width: 100%;
+                }
+
+                textarea {
+                    border-radius: 0;
+                    border: 2px solid #b1b493;
+                    margin: 15px 0;
+                    padding: 10px 20px;
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+
+            button {
+                background: #b1b493;
+                padding: 16px 48px;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 40px 16px;
+            width: 380px;
+
+            .address {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 46px;
+
+                .addressIcon {
+                    background-color: #b1b493;
+                    color: #fff;
+                    font-size: 21px;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .addressData {
+                    font-size: 16px;
+                    margin: 0 15px;
+
+                    span {
+                        margin: 0;
+                        color: #000;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .contactBox {
+        justify-content: center !important;
+
+        .box1 {
+            width: 100% !important;
+            padding: 24px !important;
+
+            .input {
+                flex-direction: column;
+
+                input{
+                    margin-right: 0 !important;
+                }
+
+                button {
+                    padding: 16px 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,20 @@
 import React from 'react'
-import { BiSolidChevronRight, BiLogoLinkedin, BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
+import { BiSolidChevronRight, BiLogoLinkedin, BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoGithub, BiLogoMessenger } from 'react-icons/bi';
 import { BsFillMapFill, BsFillTelephoneFill } from 'react-icons/bs';
 import { FaPaperPlane } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Trigger animation only once
+  });
+
+  const openMessenger = () => {
+    // window.location.href = ('https://m.me/nomii.23', '_blank')
+    window.open('https://m.me/nomii.23', '_blank');
+  }
+
   return (
     <>
       <div className="footer">
@@ -19,19 +29,19 @@ export default function Footer() {
               <h1>Links</h1>
               <ul>
                 <li><BiSolidChevronRight className='arrowIcon' />
-                  <Link to="/" className='footerLinks'>Home</Link>
+                  <a href="#home" className='footerLinks'>Home</a>
                 </li>
                 <li><BiSolidChevronRight className='arrowIcon' />
-                  <Link to="/about" className='footerLinks'>About</Link>
+                  <a href="#about" className='footerLinks'>About</a>
                 </li>
                 <li><BiSolidChevronRight className='arrowIcon' />
-                  <Link to="/" className='footerLinks'>Services</Link>
+                  <a href="#services" className='footerLinks'>Services</a>
                 </li>
                 <li><BiSolidChevronRight className='arrowIcon' />
-                  <Link to="/" className='footerLinks'>Projects</Link>
+                  <a href="#projects" className='footerLinks'>Projects</a>
                 </li>
                 <li><BiSolidChevronRight className='arrowIcon' />
-                  <Link to="/" className='footerLinks'>Contact</Link>
+                  <a href="#contact" className='footerLinks'>Contact</a>
                 </li>
               </ul>
             </div>
@@ -62,11 +72,14 @@ export default function Footer() {
                 <li><BsFillTelephoneFill className='fs-5 me-3' />+92 308 1062309</li>
                 <li><FaPaperPlane className='fs-5 me-3' />numanirshad78@gmail.com</li>
               </ul>
-              <div className="icons">
-                <ul>
+              <div ref={ref}
+                className={`icons animate__animated ${inView ? 'animate__fadeInUp' : ''}`}>
+                <ul className='w-100'>
                   <li><BiLogoLinkedin className='fs-1 p-2' /></li>
                   <li><BiLogoFacebook className='fs-1 p-2' /></li>
                   <li><BiLogoInstagram className='fs-1 p-2' /></li>
+                  <li><BiLogoTwitter className='fs-1 p-2' /></li>
+                  <li><BiLogoGithub className='fs-1 p-2' /></li>
                 </ul>
               </div>
             </div>
@@ -74,6 +87,11 @@ export default function Footer() {
           <div className="footer-para">
             <p>Copyright © 2023 All rights reserved | This portfolio is made with ❤️  by Nomi</p>
           </div>
+
+          <div className="messenger" onClick={openMessenger}>
+            <BiLogoMessenger className='mIcon' />
+          </div>
+
         </div>
       </div>
     </>

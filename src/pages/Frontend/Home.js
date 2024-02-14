@@ -6,12 +6,15 @@ import CV from '../../assets/files/NomiCV.pdf'
 import { TypeAnimation } from 'react-type-animation'
 import Services from './Services'
 import Projects from './Projects'
+import Contact from './Contact'
 
 export default function Home() {
+
   return (
     <Layout>
       {/* Home */}
-      <div className="home" id="home">
+      <div className="home" id="home" data-index='0'>
+        <div></div>
         <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -19,29 +22,29 @@ export default function Home() {
                 <div className="homeContent">
                   <div className='homeArrow'></div>
                 </div>
-                <div className="contentCenter">
+                <div className="contentCenter animate__animated animate__fadeInUp">
                   <h1>
                     <span>Hi, I am</span>
                     Numan Irshad
                   </h1>
                   {/* <h3 className='topHeading text-start'> */}
-                    <TypeAnimation
-                      sequence={[
-                        "I'm a SOFTWARE ENGINEER",
-                        1000,
-                        "I'm a MERN STACK DEVELOPER",
-                        1000,
-                        "I'm a FRONTEND DEVELOPER",
-                        1000,
-                        "I'm a WEBSITE DEVELOPER",
-                        1000,
-                      ]}
-                      wrapper="p"
-                      speed={50}
-                      style={{ color: '#B1B493', fontSize: "24px",  marginBottom: '20px', fontWeight: "900", letterSpacing: "2px"}}
-                      repeat={Infinity}
-                    />
-                    {/* Software Engineer | MERN Developer | Website Developer */}
+                  <TypeAnimation
+                    sequence={[
+                      "I'm a SOFTWARE ENGINEER",
+                      1000,
+                      "I'm a MERN STACK DEVELOPER",
+                      1000,
+                      "I'm a FRONTEND DEVELOPER",
+                      1000,
+                      "I'm a WEBSITE DEVELOPER",
+                      1000,
+                    ]}
+                    wrapper="p"
+                    speed={50}
+                    style={{ color: '#B1B493', fontSize: "24px", marginBottom: '20px', fontWeight: "900", letterSpacing: "2px" }}
+                    repeat={Infinity}
+                  />
+                  {/* Software Engineer | MERN Developer | Website Developer */}
                   {/* </h3> */}
                   <div className="buttons">
                     <button className='btn hireMe'>Hire me</button>
@@ -62,7 +65,7 @@ export default function Home() {
                 <div className="homeContent">
                   <div className='homeArrow'></div>
                 </div>
-                <div className="contentCenter">
+                <div className="contentCenter animate__animated animate__fadeInUp">
                   <h3 className='topHeading text-start'>I design & build brand websites</h3>
                   <h1><span>Hi, I am</span> Nomi<span className='d-inline-block fs-1'>.</span></h1>
                   <h2>This is my Portfolio.</h2>
@@ -85,7 +88,7 @@ export default function Home() {
       </div>
 
       {/* About  */}
-      <About />
+      <About/>
 
       {/* Skills */}
       <Skills />
@@ -95,6 +98,9 @@ export default function Home() {
 
       {/* Projects */}
       <Projects />
+
+      {/* Contact */}
+      <Contact />
 
     </Layout>
   )

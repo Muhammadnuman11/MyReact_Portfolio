@@ -4,12 +4,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
+import 'animate.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
-    <BrowserRouter basename='/index.html'>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
