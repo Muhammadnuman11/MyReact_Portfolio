@@ -15,6 +15,8 @@ export default function Footer() {
     window.open('https://m.me/nomii.23', '_blank');
   }
 
+  const years = new Date().getFullYear()
+
   return (
     <>
       <div className="footer">
@@ -85,7 +87,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer-para">
-            <p>Copyright © 2023 All rights reserved | This portfolio is made with ❤️  by Nomi</p>
+            <p>Copyright © {years} All rights reserved | This portfolio is made with ❤️  by Nomi</p>
           </div>
 
           <div className="messenger" onClick={openMessenger}>

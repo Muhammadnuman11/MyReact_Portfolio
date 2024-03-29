@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Animation() {
     const [ref, inView] = useInView({
-        triggerOnce: true, // Trigger animation only once
+        triggerOnce: true, 
       });
   return (
     <section
