@@ -17,10 +17,12 @@ const servicesData = [
         img: "/images/colors.png",
     },
     {
-        name: "iChat - Application",
-        description: "Develop iChat - Web Application using HTML CSS NodeJS and Socket.io.",
-        img: "/images/IChat.png",
-        link: "https://firebasestorage.googleapis.com/v0/b/project-videos-ad719.appspot.com/o/Project%20Videos%2FweatherApp.mp4?alt=media&token=846fce1d-0799-40f5-95b3-b2a16f5b1cb1",
+        name: "Citi Pharma - Application",
+        description: "Develop Citi Pharma - Web Application using ReactJs SCSS Bootstrap",
+        // img: "/images/IChat.png",
+        iFrame: "citipharma.com.pk",
+        // img: "/images/IChat.png",
+        // link: "https://firebasestorage.googleapis.com/v0/b/project-videos-ad719.appspot.com/o/Project%20Videos%2FweatherApp.mp4?alt=media&token=846fce1d-0799-40f5-95b3-b2a16f5b1cb1",
     },
     {
         name: "FYP | Car Parking And Canteen Mangement System",

@@ -21,7 +21,7 @@ export default function Projects() {
                     className={` projectsBox animate__animated ${inView ? 'animate__fadeInUp' : ''}`}>
                     {projectsData.map((projects, i) => {
                         return <div className="box" key={i}>
-                            {projects.link ?
+                            {/* {projects.link ?
                                 <a href={projects.link} target='_blank' rel="noreferrer" >
                                     <img src={projects.img} alt="" />
                                 </a> :
@@ -31,7 +31,12 @@ export default function Projects() {
                                     :
                                     <video src={projects.video} controls></video>
 
-                            }
+                            } */}
+
+                            <a href={projects.iFrame} target='_blank' rel="noreferrer" >
+                                <iframe src={projects.iFrame} title='Citi Pharma' width='100%' height='100%'/>
+                            </a>
+
                             <div className="detail-box">
                                 <h3>
                                     {projects.name}
