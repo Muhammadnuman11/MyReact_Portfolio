@@ -20,32 +20,36 @@ export default function Projects() {
                 <div ref={ref}
                     className={` projectsBox animate__animated ${inView ? 'animate__fadeInUp' : ''}`}>
                     {projectsData.map((projects, i) => {
-                        return <div className="box" key={i}>
-                            {/* {projects.link ?
-                                <a href={projects.link} target='_blank' rel="noreferrer" >
-                                    <img src={projects.img} alt="" />
-                                </a> :
-
-                                projects.img ?
-                                    <img src={projects.img} alt="" />
+                        return <a href={projects.link} target='_blank' rel="noreferrer" >
+                            <div className="box" key={i}>
+                                {projects.link ?
+                                    <>
+                                        {/* <img src={projects.img} alt="" /> */}
+                                        < iframe src={projects.link} title='Citi Pharma'> </iframe>
+                                    </>
                                     :
-                                    <video src={projects.video} controls></video>
 
-                            } */}
+                                    projects.img ?
+                                        <img src={projects.img} alt="" />
+                                        :
+                                        <>
+                                            <video src={projects.video} controls>
+                                            </video>
+                                        </>
 
-                            <a href={projects.iFrame} target='_blank' rel="noreferrer" >
-                                <iframe src={projects.iFrame} title='Citi Pharma' width='100%' height='100%'/>
-                            </a>
+                                }
 
-                            <div className="detail-box">
-                                <h3>
-                                    {projects.name}
-                                </h3>
-                                <p className='mainPara text-start'>
-                                    {projects.description}
-                                </p>
+
+                                <div className="detail-box">
+                                    <h3>
+                                        {projects.name}
+                                    </h3>
+                                    <p className='mainPara text-start'>
+                                        {projects.description}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     })}
                 </div>
             </div>
